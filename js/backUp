@@ -1,0 +1,84 @@
+'use strict'
+document.addEventListener('DOMContentLoaded', () => {
+
+    if (localStorage.lightMode === "sun") {
+        $('#darkMode').addClass('bi-sun');
+        $('#settings').attr('data-stylesheet', './css/light.css');
+        loadTheme();
+    } else {
+        $('#darkMode').addClass('bi-moon-stars');
+    };
+
+    document.getElementById('settings').addEventListener('click', changeLocalMode, false);
+    function changeLocalMode() {
+        let mode = localStorage.getItem("lightMode");
+
+        switch (mode) {
+            case "dark": changeSun();
+                mode = "sun";
+                localStorage.lightMode = "sun";
+                break;
+            case "sun": changeDark();
+                mode = "dark";
+                localStorage.lightMode = "dark";
+                break;
+        }
+    };
+    function loadTheme() {
+        let e = $('#settings').attr('data-stylesheet');
+        $('#style').attr('href', e);
+        return false;
+    };
+    function changeSun() {
+        setTimeout(() => {
+            $('#darkMode').removeClass('bi-moon-stars');
+            $('#darkMode').addClass('bi-sun');
+        }, 200);
+        $('#settings').attr('data-stylesheet', './css/light.css');
+        loadTheme();
+    };
+    function changeDark() {
+        setTimeout(() => {
+            $('#darkMode').removeClass('bi-sun');
+            $('#darkMode').addClass('bi-moon-stars');
+        }, 200);
+        $('#settings').attr('data-stylesheet', './css/dark.css');
+        loadTheme();
+    };
+
+    window.addEventListener("storage", () => {
+        if (localStorage.lightMode === "dark") {
+            localStorage.lightMode = "dark";
+        } else {
+            localStorage.lightMode = "sun";
+        }
+    }, false);
+
+
+    let lastScrollTop = 0;
+
+    $(window).scroll(function (event) {
+        let st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            if (!$('header').hasClass('bullet')) {
+                $('header').addClass('bullet');
+                $('#nav').addClass('bullet');
+                setTimeout(() => {
+                    $('header').addClass('radius');
+                }, 50);
+            };
+        } else {
+            $('header').removeClass('bullet');
+            $('#nav').removeClass('bullet');
+            $('header').removeClass('radius');
+        }
+
+        lastScrollTop = st;
+
+        if ($(this).scrollTop() <= 0) {
+            $('header').removeClass('bullet');
+            $('#nav').removeClass('bullet');
+            $('header').removeClass('radius');
+        };
+    });
+}, false);

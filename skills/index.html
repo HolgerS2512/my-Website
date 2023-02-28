@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100" style="background:--white;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.ico">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.ico" sizes="16x16">
+    <link rel="apple-touch-icon" type="image/X-UA-Compatible" href="apple-touch-icon-180x180.png">
+    <link rel="android-icon" type="image/X-UA-Compatible" href="android-icon-192x192.png">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css//bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/dark.css" id="style">
+
+    <title>Skills | Holger Schatte</title>
+
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", () => {
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: { background: "rgb(41,44,53)" },
+                    button: { background: "rgb(44,200,181)" }
+                },
+                position: "bottom-right",
+                law: { regionalLaw: true },
+                location: true,
+                content: {
+                    header: 'Diese Website verwendet Cookies!',
+                    message: 'Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.',
+                    dismiss: 'Verstanden!',
+                    link: 'Mehr dazu',
+                    href: 'https://www.holger-schatte-developer.de/privacy-policy',
+                    close: '&#x274c;',
+                },
+                elements: {
+                    messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></span>',
+                }
+            })
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            $("body").css("display", "none");
+            $("body").fadeIn(1000);
+            $("a.transition").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(0, redirectPage);
+            });
+            function redirectPage() {
+                window.location = linkLocation;
+            };
+        }, false);
+    </script>
+</head>
+<body class="w-100">
+    
+        <header class="position-fixed header">
+            <nav id="nav" class="position-relative">
+                <ul id="nav-ul" class="justify-content-center">
+                    <div class="ul-child arrow" id="arrow"><span></span></div>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a id="headbox-left" class="nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de" rel="noopener noreferrer">Startseite</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a class="active nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de/skills" rel="noopener noreferrer">Skills</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a class="nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de/about" rel="noopener noreferrer">Über mich</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a id="headbox-right" class="nav-links text-decoration-none d-flex align-items-center"  href="https://www.holger-schatte-developer.de/contact" rel="noopener noreferrer">Kontakt</a></li>
+                    <div class="ul-child li-out" id="settings">
+                        <i id="darkMode" class="darkMode position-relative bi"></i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="wrapper mx-auto overflow-hidden">
+    
+            <div id="main" class="col-lg-9 position-relative">
+                <i class="back-icon position-absolute z-0 d-flex bi bi-braces-asterisk" style="opacity:.02;top:15%;"></i>
+                <h1 class="col-lg-10 text-break">Meine Skills</h1>
+                <p class="head-two-txt">
+                    Meine Arbeitsweise und fachliche Qualifikation: Sprachen, Frameworks und weitere spezifische Fähigkeiten. 
+                </p>
+            </div>
+        <div style="margin:2rem 0 7rem;">
+            <div data-fade-in-left class="review fade w-100 d-flex justify-content-end">
+                <div class="d-flex flex-column p-3" style="max-width: 550px;min-width: 1px;">
+                    <div class="review-con-in text-center d-flex">
+                        <div class="review-quote-con"><i class="review-quote bi bi-quote"></i></div>
+                        <span class="p">Sein Durchhaltevermögen und das Bewältigen erheblicher Arbeitsmengen sind besonders positiv bewertet worden.</span>
+                        <i class="review-quote-two bi bi-quote"></i>
+                    </div>
+                    <span class="p-two p-3" style="align-self:flex-end;color:var(--neon-green);margin-right:2rem;">Schulfahrt Touristik SFT GmbH</span>
+                </div>
+            </div>
+                <div data-fade-in-right class="review fade w-100">
+                    <div class="d-flex flex-column p-3" style="max-width: 530px;min-width: 1px;">
+                        <div class="review-con-in text-center d-flex">
+                            <div class="review-quote-con"><i
+                                    class="review-quote bi bi-quote"></i></div>
+                            <span class="p">Sein Arbeitsstil zeichnete sich durch sorgfältige Planung, Systematik und klare Strukturierung aus.</span>
+                            <i class="review-quote-two bi bi-quote"></i>
+                        </div>
+                        <span class="p-two p-3" style="align-self:flex-end;color:var(--neon-green);margin-right:2rem;">
+                            Deutsche Post Ag</span>
+                    </div>
+                </div>
+                    <div data-fade-in-left class="review fade w-100 d-flex justify-content-end">
+                        <div class="d-flex flex-column p-3" style="max-width: 600px;min-width: 1px;">
+                            <div class="review-con-in text-center d-flex">
+                                <div class="review-quote-con"><i
+                                        class="review-quote bi bi-quote"></i></div>
+                                <span class="p">Auch unter Zeitdruck arbeitete er stets ausdauernd und mit hoher Kreativität.</span>
+                                <i class="review-quote-two bi bi-quote"></i>
+                            </div>
+                            <span class="p-two p-3" style="align-self:flex-end;color:var(--neon-green);margin-right:2rem;">Schulfahrt Touristik SFT GmbH</span>
+                        </div>
+                    </div>
+                    <div data-fade-in-right class="review fade w-100">
+                        <div class="d-flex flex-column p-3" style="max-width: 570px;min-width: 1px;">
+                            <div class="review-con-in text-center d-flex">
+                                <div class="review-quote-con"><i
+                                        class="review-quote bi bi-quote"></i></div>
+                                <span class="p">Dank seiner sehr schnellen Auffassungsgabe bewältigte Herr
+                                    Schatte auch schwierige Situationen und erkannte dabei das Wesentliche.</span>
+                                <i class="review-quote bi bi-quote"></i>
+                            </div>
+                            <span class="p-two p-3" style="align-self:flex-end;color:var(--neon-green);margin-right:2rem;">
+                                ALDI GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                </div>
+            <div id="skill-table" class="position-relative d-flex flex-column align-items-center">
+                <div class="skill-table-in d-flex">
+                    <div data-fade-in-left class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img class="skill-img" src="../img/html400.webp" alt="logo-html5">
+                        <span class="skill-header">HTML5</span></div>
+                        <p class="p" style="margin-top:1.5rem;">HTML5 ist die fünfte Fassung der Hypertext Markup Language, einer
+                        Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im
+                        World Wide Web.</p>
+                    </div>
+                    <div data-fade-in-right class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img class="skill-img" src="../img/CSS.webp" alt="logo-css">
+                        <span class="skill-header">Cascada Stylesheet</span></div>
+                        <p class="p" style="margin-top:1.5rem;">Cascading Style Sheets ist
+                        eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und JavaScript eine der Kernsprachen des World
+                        Wide Webs.</p>
+                    </div>
+                </div>
+                <div class="skill-table-in d-flex">
+                    <div data-fade-in-left class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img src="../img/JS.webp" alt="logo-js" class="skill-img rounded-circle" >
+                        <span class="skill-header">Javascript</span></div>
+                        <p class="p" style="margin-top:1.5rem;">JavaScript ist eine Skriptsprache, die ursprünglich für dynamisches HTML in Webbrowsern
+                        entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die
+                        Möglichkeiten von HTML zu erweitern.</p>
+                    </div>
+                    <div data-fade-in-right class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img src="../img/jquery.webp" alt="logo-jquery" class="skill-img rounded-circle" >
+                        <span class="skill-header">jQuery</span></div>
+                        <p class="p" style="margin-top:1.5rem;">jQuery ist eine freie JavaScript-Bibliothek, die Funktionen zur DOM-Navigation und -Manipulation zur
+                        Verfügung stellt. jQuery ist die meistverwendete JavaScript-Bibliothek.</p>
+                    </div>
+                </div>
+                <div id="skill-table-in" class="skill-table-in d-flex">
+                    <div data-fade-in-left class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img class="skill-img" src="../img/logo.webp" alt="logo-cordova">
+                            <span class="skill-header">Apache Cordova</span>
+                        </div>
+                        <p class="p" style="margin-top:1.5rem;">Apache Cordova ist ein Open-Source-Framework für sog. hybride Apps.
+                        Bei der Verwendung von Cordova wird eine App mit Web-Techniken entwickelt und dann in eine
+                        vom Framework erzeugte native Container-App verpackt.</p>
+                    </div>
+                    <div data-fade-in-right class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img class="skill-img" src="../img/bootstrap.webp" alt="logo-bootstrap">
+                            <span class="skill-header">Bootstrap</span>
+                        </div>
+                        <p class="p" style="margin-top:1.5rem;word-wrap:break-word;">Bootstrap ist ein freies Frontend-CSS-Framework. Es enthält auf HTML und CSS basierende Gestaltungsvorlagen für
+                        Typografie, Navigations- und andere Oberflächengestaltungselemente sowie
+                        zusätzliche, optionale Js-Erweiterungen.</p>
+                    </div>
+                </div>
+                <div class="skill-table-in d-flex">
+                    <div data-fade-in-left class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img src="../img/ux.webp" alt="UserExperience" class="skill-img rounded-circle">
+                            <span class="skill-header">User Experience</span>
+                        </div>
+                        <p class="p" style="margin-top:1.5rem;">Die Nutzererfahrung umschreibt alle Aspekte der
+                        Eindrücke und das Erlebnis eines Nutzers bei der Interaktion mit einem Produkt, Dienst, einer Umgebung oder Einrichtung. 
+                        Software muss genau abgestimmt sein auf die Nutzererfahrung der Anwender.</p>
+                    </div>
+                    <div data-fade-in-right class="skill-container fade d-flex flex-column">
+                        <div class="skill-con-img d-flex"><img src="../img/ui.webp" alt="UserInterface"
+                                class="skill-img rounded-circle">
+                            <span class="skill-header">User Interface</span>
+                        </div>
+                        <p class="p" style="margin-top:1.5rem;">Ein User Interface (deutsch: Benutzeroberfläche) ist eine Schnittstelle, 
+                            über die eine Person eine Software oder
+                            Hardware kontrollieren kann. Ein tiefer gehendes Verständnis für UI sollte heutzutage unerlässlich sein.</p>
+                    </div>
+                </div>
+            </div>
+
+    <footer class="d-flex justify-content-center align-items-center flex-column p-3 z-1">
+        <div id="foo-icon">
+            <a style="margin:0 4px;padding:8px;" href="https://github.com/HolgerS2512" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-github z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.linkedin.com/in/holger-schatte-developer"
+                target="_blank" rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-linkedin z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.xing.com/profile/Holger_Schatte/cv" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-xing z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.instagram.com/holgers2512/?hl=de" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none bi bi-instagram z-2">
+            </a>
+        </div>
+        <div id="copyright" class="foo-font" style="margin-bottom:10px;"></div>
+        <div class="z-2"><a class="foo-font link-hover text-decoration-none z-1" style="padding:10px 0;"
+                href="https://www.holger-schatte-developer.de/privacy-policy" rel="noopener noreferrer">Datenschutz</a> . <a
+                class="foo-font link-hover text-decoration-none z-1" style="padding:10px 0;"
+                href="https://www.holger-schatte-developer.de/imprint" rel="noopener noreferrer">Impressum</a></div>
+    </footer>
+</div>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript">
+    'use strict'
+    document.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem("lightMode") === "sun") {
+            $('#darkMode').addClass('bi-sun');
+            $('#settings').attr('data-stylesheet', '../css/light.css');
+            loadTheme();
+        } else if (localStorage.getItem("lightMode") === null) {
+            $('#darkMode').addClass('bi-moon-stars');
+            localStorage.setItem("lightMode", "dark");
+        } else {
+            $('#darkMode').addClass('bi-moon-stars');
+        };
+        document.getElementById('settings').addEventListener('click', changeLocalMode, false);
+        function changeLocalMode() {
+            let mode = localStorage.getItem("lightMode");
+            switch (mode) {
+                case "dark": changeSun();
+                    mode = "sun";
+                    localStorage.lightMode = "sun";
+                    break;
+                case "sun": changeDark();
+                    mode = "dark";
+                    localStorage.lightMode = "dark";
+                    break;
+            }
+        };
+        function loadTheme() {
+            let e = $('#settings').attr('data-stylesheet');
+            $('#style').attr('href', e);
+            return false;
+        };
+        function changeSun() {
+            $('#darkMode').removeClass('bi-moon-stars');
+            $('#darkMode').addClass('bi-sun');
+            $('#settings').attr('data-stylesheet', '../css/light.css');
+            loadTheme();
+        };
+        function changeDark() {
+            $('#darkMode').removeClass('bi-sun');
+            $('#darkMode').addClass('bi-moon-stars');
+            $('#settings').attr('data-stylesheet', '../css/dark.css');
+            loadTheme();
+        };
+
+        let lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            let st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                if (!$('header').hasClass('bullet')) {
+                    $('header').addClass('bullet');
+                    $('.li-out').addClass('bullet');
+                    setTimeout(() => {
+                        $('header').addClass('radius');
+                    }, 50);
+                };
+            } else {
+                $('header').removeClass('bullet');
+                $('.li-out').removeClass('bullet');
+                $('header').removeClass('radius');
+            }
+            lastScrollTop = st;
+            if ($(this).scrollTop() <= 0) {
+                $('header').removeClass('bullet');
+                $('.li-out').removeClass('bullet');
+                $('header').removeClass('radius');
+            };
+        });
+    }, false);
+</script>
+<script type="text/javascript">
+    'use strict'
+    window.addEventListener('load', () => {
+
+        const observerL = new IntersectionObserver(triggerFadeInLeft, {
+            rootMargin: '0px',
+            threshold: 0.5
+        });
+        function triggerFadeInLeft(entries, observerL) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-from-left");
+                }
+            });
+        };
+        document.querySelectorAll("[data-fade-in-left]").forEach(item => observerL.observe(item));
+
+        const observerR = new IntersectionObserver(triggerFadeInRight, {
+            rootMargin: '0px',
+            threshold: 0.5
+        });
+        function triggerFadeInRight(entries, observerR) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-from-right");
+                }
+            });
+        };
+        document.querySelectorAll("[data-fade-in-right]").forEach(item => observerR.observe(item));
+
+        $('.slider').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            arrows: false,
+            dots: false,
+            waitForAnimate: false,
+            settings: "unslick",
+            pauseOnHover: false
+        });
+
+        document.getElementById('arrow').addEventListener('click', setMenu, false);
+        let l = document.querySelectorAll('.ul-child');
+        let changeMenu = 'visible';
+        function setMenu() {
+            switch (changeMenu) {
+                case 'visible': visibleMenu();
+                    changeMenu = 'hidden';
+                    break;
+                case 'hidden': hiddenMenu();
+                    changeMenu = 'visible';
+                    break;
+            };
+            function visibleMenu() {
+                if (window.screen.width <= 768 && window.screen.width != undefined) {
+                    $(() => {
+                        $({ blurValue: 0 }).animate({ blurValue: 5 }, {
+                            duration: 500,
+                            easing: 'swing',
+                            step: function () {
+                                $('.wrapper').css({
+                                    'filter': 'blur(' + this.blurValue + 'px)'
+                                });
+                            }
+                        });
+                    });
+                    if (!$('header').hasClass('menu')) {
+                        $('header').addClass('menu');
+                    };
+                    $('#settings').css('display', 'none');
+                    $('#arrow').children().addClass('bi-plus-lg');
+                    $('#nav-ul').css('visibility', 'visible');
+                    for (let i = 0; i < 4;) {
+                        setTimeout(function () {
+                            l[i].classList.add('sky');
+                        }, 150 * i++);
+                    };
+                } else {
+                    $('header').removeClass('bullet');
+                    $('.li-out').removeClass('bullet');
+                    $('header').removeClass('radius');
+                }
+            };
+            function hiddenMenu() {
+                if (window.screen.width <= 768 && window.screen.width != undefined) {
+                    for (let i = 0; i < 4;) {
+                        setTimeout(function () {
+                            l[i].classList.remove('sky');
+                        }, 150 * i++);
+                    };
+                    setTimeout(() => {
+                        $('#settings').css('display', 'flex');
+                        $('header').removeClass('menu');
+                        $('#arrow').children().removeClass('bi-plus-lg');
+                    }, 750);
+                    setTimeout(() => {
+                        $('#nav-ul').css('visibility', 'hidden');
+                    }, 775);
+                    $('#nav').css('overflow', 'hidden');
+                    $('#settings').css('opacity', 0);
+                    setTimeout(() => {
+                        $('#nav').css('overflow', 'visible');
+                        $('#settings').animate({
+                            opacity: ['1', 'swing']
+                        }, 350);
+                    }, 1250);
+                    $(() => {
+                        $({ blurValue: 5 }).animate({ blurValue: 0 }, {
+                            duration: 1350,
+                            easing: 'swing',
+                            step: function () {
+                                $('.wrapper').css({
+                                    'filter': 'blur(' + this.blurValue + 'px)'
+                                });
+                                setTimeout(() => {
+                                    if (this.blurValue != '0px' && changeMenu != 'hidden') {
+                                        $('.wrapper').css('filter', 'blur(0px)');
+                                    };
+                                }, 1350);
+                            }
+                        });
+                    });
+                }
+            }
+        };
+
+        $('#copyright').text('© ' + new Date().getFullYear() + ' Holger Schatte . Softwareentwickler');
+    }, false);
+</script>
+
+</body>
+
+</html>

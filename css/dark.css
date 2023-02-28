@@ -1,0 +1,289 @@
+:root {
+    --header: rgb(26, 24, 27);
+    --header-accent: rgb(43, 40, 46, .35);
+    --neon-green: rgb(44, 200, 181);
+    --neon-green-on: rgb(59, 255, 232);
+    --neon-green-trans: rgb(59, 255, 232, .25);
+    --neon-red: rgb(255, 72, 87);
+
+    --box-shadow: rgba(48, 48, 48, .05);
+    --box-shadow-mobile: rgb(0, 0, 0, .7);
+    --box-shadow-black: rgba(0, 0, 0, .15);
+    --box-shadow-black-set: rgba(0, 0, 0, .25);
+    --box-shadow-white: rgba(255, 255, 255, 0.15);
+    --box-shadow-white-set: rgba(255, 255, 255, 0.25);
+
+    --white-f: #fff;
+    --white: rgb(242, 242, 242);
+    --grey-white: rgb(100, 100, 100);
+    --grey: rgb(41, 44, 53);
+    --grey-dark: rgb(33, 33, 33);
+    --black: rgb(21, 20, 24);
+    --black-: rgb(0, 0, 0);
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tab-size: 4;
+    tab-size: 4;
+    -webkit-text-fill-color: inherit;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: var(--white-f);
+}
+body {
+    background: var(--black-);
+}
+
+.wrapper {
+    background: var(--black);
+}
+
+header {
+        -webkit-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        -moz-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        -o-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        -ms-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        -khtml-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+    box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+}
+
+header.bullet {
+        -webkit-box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+        -moz-box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+        -o-box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+        -ms-box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+        -khtml-box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+    box-shadow: 4px -4px 3px 0 var(--box-shadow-black);
+
+        -webkit-border-top: 1px solid var(--box-shadow-white);
+        -moz-border-top: 1px solid var(--box-shadow-white);
+        -o-border-top: 1px solid var(--box-shadow-white);
+        -ms-border-top: 1px solid var(--box-shadow-white);
+        -khtml-border-top: 1px solid var(--box-shadow-white);
+    border-top: 1px solid var(--box-shadow-white);
+
+        -webkit-border-right: 1px solid var(--box-shadow-white);
+        -moz-border-right: 1px solid var(--box-shadow-white);
+        -o-border-right: 1px solid var(--box-shadow-white);
+        -ms-border-right: 1px solid var(--box-shadow-white);
+        -khtml-border-right: 1px solid var(--box-shadow-white);
+    border-right: 1px solid var(--box-shadow-white);
+
+        -webkit-border-bottom: 1px solid var(--box-shadow-white-set);
+        -moz-border-bottom: 1px solid var(--box-shadow-white-set);
+        -o-border-bottom: 1px solid var(--box-shadow-white-set);
+        -ms-border-bottom: 1px solid var(--box-shadow-white-set);
+        -khtml-border-bottom: 1px solid var(--box-shadow-white-set);
+    border-bottom: 1px solid var(--box-shadow-white-set);
+
+        -webkit-border-left: 1px solid var(--box-shadow-white-set);
+        -moz-border-left: 1px solid var(--box-shadow-white-set);
+        -o-border-left: 1px solid var(--box-shadow-white-set);
+        -ms-border-left: 1px solid var(--box-shadow-white-set);
+        -khtml-border-left: 1px solid var(--box-shadow-white-set);
+    border-left: 1px solid var(--box-shadow-white-set);
+}
+
+header>nav>ul>li>a {
+    background-image: linear-gradient(to bottom, var(--header)49%, var(--grey)100%);
+    color: var(--white);
+    font-weight: 300;
+}
+
+#settings {
+    color: var(--white);
+    box-shadow: 10px -10px 16px 4px var(--box-shadow-black), 10px -10px 16px 8px var(--box-shadow-black);
+}
+.color {
+    color: var(--white-f);
+}
+.img {
+    border: 2px solid var(--grey);
+}
+
+.head-two-txt {
+    color: var(--white-);
+}
+
+.icon-hover {
+        -webkit-opacity: .75;
+        -moz-opacity: .75;
+        -o-opacity: .75;
+        -ms-opacity: .75;
+        -khtml-opacity: .75;
+    opacity: .75;
+}
+
+.icon-hover:hover {
+        -webkit-opacity:1;
+        -moz-opacity:1;
+        -o-opacity:1;
+        -ms-opacity:1;
+        -khtml-opacity:1;
+    opacity: 1;
+}
+
+#language {
+    background-color:transparent;
+}
+
+.l-txt {
+    color: #fff;
+}
+
+.icons {
+    color: var(--white);
+}
+.img-about {
+        -webkit-filter:grayscale(1) contrast(1.75) brightness(.75);
+        -moz-filter:grayscale(1) contrast(1.75) brightness(.75);
+        -o-filter:grayscale(1) contrast(1.75) brightness(.75);
+        -ms-filter:grayscale(1) contrast(1.75) brightness(.75);
+        -khtml-filter:grayscale(1) contrast(1.75) brightness(.75);
+    filter:grayscale(1) contrast(1.75) brightness(.75);
+}
+#px-i {
+    border: 2px solid var(--grey);
+    background: var(--black);
+    box-shadow: 0 0 10px 10px var(--box-shadow-black), 0 0 30px 20px var(--box-shadow-black);
+}
+
+#px-htxt,
+.px-txt {
+    color: var(--black-2);
+}
+#list-about-mail {
+    border-top: 1px solid var(--box-shadow-white);
+}
+.skill-container {
+    border-top: 1px solid var(--box-shadow-black-set);
+    border-right: 1px solid var(--box-shadow-black-set);
+    border-bottom: 2px solid var(--box-shadow-black-set);
+    border-left: 2px solid var(--box-shadow-black-set);
+    background-image: linear-gradient(25deg, var(--black) 0%, transparent 75%);
+    box-shadow: 6px -5px 16px 4px var(--box-shadow-black-set);
+}
+#linkedin-icon,
+#xing-icon {
+    color: var(--grey-white);
+}
+#linkedin-icon:hover,
+#xing-icon:hover {
+    color: var(--neon-green);
+}
+.social-px {
+    color: var(--grey-white);
+}
+
+.opposite {
+    color: var(--neon-green-on);
+}
+
+.opposite:hover {
+    color: var(--neon-green);
+}
+
+#phone-landscape,
+#envelope-at,
+#geo-alt,
+#foo-icon,
+.foo-font {
+    color: var(--white-f);
+}
+
+@media screen and (min-width:576px) {
+    .wrapper {
+        box-shadow: 1px 0 0 1px var(--grey-dark), -1px 0 0 1px var(--grey-dark);
+    }
+
+    #contact {
+        background-color: var(--box-shadow-black);
+    }
+
+    #px-b {
+        background-color: var(--black);
+    }
+}
+@media screen and (min-width:768px) {
+    header>nav>ul>li>a:hover {
+        text-shadow: 1px 0 10px var(--neon-green-on), 1px 0 20px var(--neon-green-on);
+        color: var(--neon-green-on);
+    }
+    #settings {
+        background-image: linear-gradient(to bottom, var(--header)49%, var(--grey)100%);
+    }
+    #settings:hover:before {
+        width: 120%;
+        height: 120%;
+
+            -webkit-border: 7px solid var(--neon-green-on);
+            -moz-border: 7px solid var(--neon-green-on);
+            -o-border: 7px solid var(--neon-green-on);
+            -ms-border: 7px solid var(--neon-green-on);
+            -khtml-border: 7px solid var(--neon-green-on);
+        border: 7px solid var(--neon-green-on);
+
+            -webkit-filter: blur(3px);
+            -moz-filter: blur(3px);
+            -o-filter: blur(3px);
+            -ms-filter: blur(3px);
+            -khtml-filter: blur(3px);
+        filter: blur(3px);
+
+            -webkit-box-shadow: 0 0 30px 6px var(--neon-green-on);
+            -moz-box-shadow: 0 0 30px 6px var(--neon-green-on);
+            -o-box-shadow: 0 0 30px 6px var(--neon-green-on);
+            -ms-box-shadow: 0 0 30px 6px var(--neon-green-on);
+            -khtml-box-shadow: 0 0 30px 6px var(--neon-green-on);
+        box-shadow: 0 0 30px 6px var(--neon-green-on);
+    }
+    #settings:hover #darkMode {
+        text-shadow: 1px 1px 10px var(--neon-green-on), 1px 0 10px var(--neon-green-on), 1px 0 20px var(--neon-green-on);
+        color: var(--neon-green-on);
+    }
+}
+@media screen and (max-width:767px) {
+    header {
+            -webkit-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -moz-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -o-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -ms-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -khtml-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+        box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+    }
+
+    header.bullet {
+            -webkit-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -moz-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -o-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -ms-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -khtml-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+        box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+    }
+
+    header.menu {
+            -webkit-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+            -moz-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+            -o-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+            -ms-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+            -khtml-box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        box-shadow: 10px -10px 8px 4px var(--box-shadow-black), 10px -10px 8px 8px var(--box-shadow-black);
+        background-color: var(--box-shadow-white-set);
+    }
+
+    header>nav>ul>li>a {
+        color: var(--white-f);
+        border-bottom: 1px solid var(--box-shadow-white);
+        background: transparent;
+        box-shadow: unset;
+        background-color: transparent;
+        background-image: transparent;
+    }
+    #settings {
+        background-image: linear-gradient(45deg, var(--header) 0, transparent 100%);
+    }
+}

@@ -1,0 +1,320 @@
+:root {
+    --header: rgb(26, 24, 27);
+    --header-accent: rgb(43, 40, 46, .35);
+    --neon-green: rgb(44, 200, 181);
+    --neon-green-on: rgb(59, 255, 232);
+    --neon-green-trans: rgb(59, 255, 232, .25);
+    --neon-red: rgb(255, 72, 87);
+
+    --box-shadow: rgba(48, 48, 48, .05);
+    --box-shadow-mobile:rgb(0,0,0,.7);
+    --box-shadow-black: rgba(0, 0, 0, .15);
+    --box-shadow-black-set: rgba(0, 0, 0, .25);
+    --box-shadow-white: rgba(255, 255, 255, 0.15);
+    --box-shadow-white-set: rgba(255, 255, 255, 0.25);
+
+    --white-f: #fff;
+    --white: rgb(242, 242, 242);
+    --creme: rgb(255, 254, 250);
+    --grey-white: rgb(75, 75, 75);
+    --grey: rgb(41, 44, 53);
+    --grey-dark: rgb(33, 33, 33);
+    --black: rgb(21, 20, 24);
+    --black-: rgb(0, 0, 0);
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tab-size: 4;
+    tab-size: 4;
+    -webkit-text-fill-color: inherit;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: var(--black-);
+}
+body {
+    background: var(--white);
+}
+.wrapper {
+    background: var(--white-f);
+}
+header {
+        -webkit-box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+        -moz-box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+        -o-box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+        -ms-box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+        -khtml-box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+    box-shadow: 10px -10px 8px 2px var(--box-shadow-black), 10px -10px 8px 4px var(--box-shadow-black);
+}
+header.bullet {
+        -webkit-box-shadow: 4px -4px 3px 0 var(--box-shadow);
+        -moz-box-shadow: 4px -4px 3px 0 var(--box-shadow);
+        -o-box-shadow: 4px -4px 3px 0 var(--box-shadow);
+        -ms-box-shadow: 4px -4px 3px 0 var(--box-shadow);
+        -khtml-box-shadow: 4px -4px 3px 0 var(--box-shadow);
+    box-shadow: 4px -4px 3px 0 var(--box-shadow);
+
+
+
+
+
+        -webkit-border-top: 1px solid var(--box-shadow-black);
+        -moz-border-top: 1px solid var(--box-shadow-black);
+        -o-border-top: 1px solid var(--box-shadow-black);
+        -ms-border-top: 1px solid var(--box-shadow-black);
+        -khtml-border-top: 1px solid var(--box-shadow-black);
+    border-top: 2px solid var(--box-shadow-black);
+
+        -webkit-border-right: 1px solid var(--box-shadow-black);
+        -moz-border-right: 1px solid var(--box-shadow-black);
+        -o-border-right: 1px solid var(--box-shadow-black);
+        -ms-border-right: 1px solid var(--box-shadow-black);
+        -khtml-border-right: 1px solid var(--box-shadow-black);
+    border-right: 2px solid var(--box-shadow-black);
+
+        -webkit-border-bottom: 1px solid var(--box-shadow-black-set);
+        -moz-border-bottom: 1px solid var(--box-shadow-black-set);
+        -o-border-bottom: 1px solid var(--box-shadow-black-set);
+        -ms-border-bottom: 1px solid var(--box-shadow-black-set);
+        -khtml-border-bottom: 1px solid var(--box-shadow-black-set);
+    border-bottom: 3px solid var(--box-shadow-black-set);
+
+        -webkit-border-left: 1px solid var(--box-shadow-black-set);
+        -moz-border-left: 1px solid var(--box-shadow-black-set);
+        -o-border-left: 1px solid var(--box-shadow-black-set);
+        -ms-border-left: 1px solid var(--box-shadow-black-set);
+        -khtml-border-left: 1px solid var(--box-shadow-black-set);
+    border-left: 3px solid var(--box-shadow-black-set);
+}
+
+header>nav>ul>li>a {
+    background-image: linear-gradient(to bottom, var(--creme)49%, var(--white)100%);
+    color: var(--box-shadow-black-set);
+    font-weight: 700;
+}
+
+#settings {
+    color: var(--white);
+    box-shadow: 10px -10px 16px 4px var(--box-shadow-black), 10px -10px 16px 8px var(--box-shadow-black);
+}
+.color {
+    color: var(--black-);
+}
+.img {
+    border: 2px solid var(--box-shadow-black-set);
+}
+
+.head-two-txt {
+    color: var(--white-);
+}
+
+.icon-hover {
+        -webkit-opacity: .5;
+        -moz-opacity: .5;
+        -o-opacity: .5;
+        -ms-opacity: .5;
+        -khtml-opacity: .5;
+    opacity: .5;
+}
+
+.icon-hover:hover {
+        -webkit-opacity: .75;
+        -moz-opacity: .75;
+        -o-opacity: .75;
+        -ms-opacity: .75;
+        -khtml-opacity: .75;
+    opacity: .75;
+}
+
+#language {
+    background-color: var(--grey-white);
+}
+.l-txt {
+    color: #fff;
+}
+
+.icons {
+    color: var(--black-);
+}
+.img-about {
+    -webkit-filter:grayscale(1) contrast(1.75) brightness(1.5);
+    -moz-filter:grayscale(1) contrast(1.75) brightness(1.5);
+    -o-filter:grayscale(1) contrast(1.75) brightness(1.5);
+    -ms-filter:grayscale(1) contrast(1.75) brightness(1.5);
+    -khtml-filter:grayscale(1) contrast(1.75) brightness(1.5);
+    filter:grayscale(1) contrast(1.75) brightness(1.5);
+}
+#px-i {
+    border: 3px solid var(--box-shadow);
+    background: var(--grey-white);
+    box-shadow: 0 0 10px 10px var(--box-shadow-black), 0 0 30px 20px var(--box-shadow-black);
+}
+.social-px {
+    color: var(--black);
+}
+#px-htxt,
+.px-txt,
+#foo-icon {
+    color: var(--white);
+}
+#list-about-mail {
+    border-top: 1px solid var(--box-shadow-black);
+}
+.skill-container {
+    border-top: 1px solid var(--box-shadow-white-set);
+    border-right: 1px solid var(--box-shadow-white-set);
+    border-bottom: 2px solid var(--box-shadow-white-set);
+    border-left: 2px solid var(--box-shadow-white-set);
+    background-image: linear-gradient(25deg, var(--white) 0%, transparent 75%);
+    box-shadow: 6px -5px 16px 4px var(--box-shadow-black);
+}
+.link-hover:hover {
+    color: var(--neon-green);
+}
+#linkedin-icon,
+#xing-icon {
+    color: var(--black);
+}
+#linkedin-icon:hover,
+#xing-icon:hover {
+    color: var(--neon-green);
+}
+.foo-font {
+    color: var(--black);
+}
+.opposite {
+    color: var(--neon-green-on);
+}
+.opposite:hover {
+    color: var(--neon-green);
+}
+#phone-landscape,
+#envelope-at,
+#geo-alt {
+    color: var(--white-f);
+}
+
+@media screen and (min-width:576px) {
+    .wrapper {
+        box-shadow: 1px 0 0 1px var(--box-shadow), -1px 0 0 1px var(--box-shadow);
+    }
+
+    #contact {
+        background-color: var(--box-shadow-black);
+    }
+
+    #px-b {
+        background-color: var(--black);
+    }
+}
+@media screen and (min-width:768px) {
+    header>nav>ul>li>a:hover {
+            text-shadow: 1px 0 10px var(--neon-green), 1px 0 20px var(--neon-green);
+            color: var(--neon-green-on);
+    }
+    #settings {
+        background-image: linear-gradient(to bottom, var(--creme)49%, var(--white)100%);
+    }
+    #settings:hover:before {
+        width: 113%;
+        height: 113%;
+
+            -webkit-border: 3px solid var(--neon-green-on);
+            -moz-border: 3px solid var(--neon-green-on);
+            -o-border: 3px solid var(--neon-green-on);
+            -ms-border: 3px solid var(--neon-green-on);
+            -khtml-border: 3px solid var(--neon-green-on);
+        border: 3px solid var(--neon-green-on);
+        
+            -webkit-filter: blur(4px);
+            -moz-filter: blur(4px);
+            -o-filter: blur(4px);
+            -ms-filter: blur(4px);
+            -khtml-filter: blur(4px);
+        filter: blur(4px);
+
+            -webkit-box-shadow: 0 0 35px 15px var(--neon-green-on);
+            -moz-box-shadow: 0 0 35px 15px var(--neon-green-on);
+            -o-box-shadow: 0 0 35px 15px var(--neon-green-on);
+            -ms-box-shadow: 0 0 35px 15px var(--neon-green-on);
+            -khtml-box-shadow: 0 0 35px 15px var(--neon-green-on);
+        box-shadow: 0 0 35px 15px var(--neon-green-on);
+    }
+    #settings:hover #darkMode {
+        text-shadow: 1px 1px 10px var(--neon-green), 1px 0 10px var(--neon-green), 1px 0 20px var(--neon-green);
+        color: var(--neon-green-on);
+    }
+}
+@media screen and (max-width:767px) {
+    header {
+            -webkit-border-top: 2px solid var(--box-shadow-black);
+            -moz-border-top: 2px solid var(--box-shadow-black);
+            -o-border-top: 2px solid var(--box-shadow-black);
+            -ms-border-top: 2px solid var(--box-shadow-black);
+            -khtml-border-top: 2px solid var(--box-shadow-black);
+        border-top: 2px solid var(--box-shadow-black);
+
+            -webkit-border-right: 2px solid var(--box-shadow-black);
+            -moz-border-right: 2px solid var(--box-shadow-black);
+            -o-border-right: 2px solid var(--box-shadow-black);
+            -ms-border-right: 2px solid var(--box-shadow-black);
+            -khtml-border-right: 2px solid var(--box-shadow-black);
+        border-right: 2px solid var(--box-shadow-black);
+
+            -webkit-border-bottom: 3px solid var(--box-shadow-black-set);
+            -moz-border-bottom: 3px solid var(--box-shadow-black-set);
+            -o-border-bottom: 3px solid var(--box-shadow-black-set);
+            -ms-border-bottom: 3px solid var(--box-shadow-black-set);
+            -khtml-border-bottom: 3px solid var(--box-shadow-black-set);
+        border-bottom: 3px solid var(--box-shadow-black-set);
+
+            -webkit-border-left: 3px solid var(--box-shadow-black-set);
+            -moz-border-left: 3px solid var(--box-shadow-black-set);
+            -o-border-left: 3px solid var(--box-shadow-black-set);
+            -ms-border-left: 3px solid var(--box-shadow-black-set);
+            -khtml-border-left: 3px solid var(--box-shadow-black-set);
+        border-left: 3px solid var(--box-shadow-black-set);
+        
+            -webkit-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -moz-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -o-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -ms-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -khtml-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+        box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+    }
+
+    header.bullet {
+            -webkit-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -moz-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -o-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -ms-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+            -khtml-box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+        box-shadow: 2px -2px 9px rgb(21, 20, 24, .5), 30px -10px 12px var(--box-shadow-black);
+    }
+
+    header.menu {
+        background-color: var(--box-shadow-mobile);
+            -webkit-box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+            -moz-box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+            -o-box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+            -ms-box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+            -khtml-box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+        box-shadow: 10px -10px 8px 4px var(--box-shadow), 10px -10px 8px 8px var(--box-shadow);
+    }
+
+    header>nav>ul>li>a {
+        color: var(--white-f);
+        font-weight: 400;
+        border-bottom: 1px solid var(--box-shadow-white-set);
+        background: transparent;
+        box-shadow: unset;
+        background-color: transparent;
+        background-image: transparent;
+    }
+    #settings {
+        background-image: linear-gradient(45deg, var(--creme) 0, transparent 100%);
+    }
+}

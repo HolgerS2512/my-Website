@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100" style="background:--white;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.ico">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.ico" sizes="16x16">
+    <link rel="apple-touch-icon" type="image/X-UA-Compatible" href="apple-touch-icon-180x180.png">
+    <link rel="android-icon" type="image/X-UA-Compatible" href="android-icon-192x192.png">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css//bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/dark.css" id="style">
+
+    <title>Kontakt | Holger Schatte</title>
+
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", () => {
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: { background: "rgb(41,44,53)" },
+                    button: { background: "rgb(44,200,181)" }
+                },
+                position: "bottom-right",
+                law: { regionalLaw: true },
+                location: true,
+                content: {
+                    header: 'Diese Website verwendet Cookies!',
+                    message: 'Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.',
+                    dismiss: 'Verstanden!',
+                    link: 'Mehr dazu',
+                    href: 'https://www.holger-schatte-developer.de/privacy-policy',
+                    close: '&#x274c;',
+                },
+                elements: {
+                    messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a class="cc-link" href="{{href}}">{{link}}</a></span>',
+                }
+            })
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            $("body").css("display", "none");
+            $("body").fadeIn(1000);
+            $("a.transition").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(0, redirectPage);
+            });
+            function redirectPage() {
+                window.location = linkLocation;
+            };
+        }, false);
+    </script>
+</head>
+<body class="w-100">
+    
+        <header class="position-fixed header">
+            <nav id="nav" class="position-relative">
+                <ul id="nav-ul" class="justify-content-center">
+                    <div class="ul-child arrow" id="arrow"><span></span></div>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a id="headbox-left" class="nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de" rel="noopener noreferrer">Startseite</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a class="nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de/skills" rel="noopener noreferrer">Skills</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a class="nav-links text-decoration-none d-flex align-items-center" href="https://www.holger-schatte-developer.de/about" rel="noopener noreferrer">Über mich</a></li>
+                    <li class="ul-child li-out d-flex justify-content-center align-items-center"><a id="headbox-right" class="active nav-links text-decoration-none d-flex align-items-center"  href="https://www.holger-schatte-developer.de/contact" rel="noopener noreferrer">Kontakt</a></li>
+                    <div class="ul-child li-out" id="settings">
+                        <i id="darkMode" class="darkMode position-relative bi"></i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="wrapper mx-auto overflow-hidden">
+    
+            <div id="main" class="col-lg-9 position-relative z-0">
+                <i class="back-icon position-absolute z-n1 d-flex bi bi-phone-vibrate" style="opacity:.02;top:15%;"></i>
+                <h1 class="col-lg-10 text-break">Wie Sie mich erreichen können.</h1>
+                <h2 style="margin:3.7rem 0 2.5rem 0;">
+                     Kontakt
+                </h2>
+                    <div>
+                        <span style="margin: .5rem 0 0 0;">Holger Schatte</span>
+                        <div style="margin: 1.25rem 0 0 0;">Telefon: <a class="text-decoration-none color link-hover z-2 tel"
+                                href="tel:+491748895181">+49 174 88 95 18 1</a></div>
+                        <div style="margin: .5rem 0 0 0;">E-Mail: <a class="text-decoration-none color link-hover z-2 mail"
+                                href="mailto:schatte-@gmx.de?subject=Vorstellungsgespräch&amp;body=Hallo%20Holger,%20wir%20würden%20dich%20gerne%20persönlich%20kennenlernen%20am%20[DATUM]%20um%20[UHRZEIT].%0AMit%20freundlichen%20Grüßen">Schatte-@gmx.de</a>
+                        </div>
+                                        <div style="margin-top:1rem;">
+                                            <a class="icon-head icon-hover fs-1 z-2" href="https://github.com/HolgerS2512" target="_blank" rel="noopener noreferrer"
+                                                class="github"><i class="icons fa fa-github"></i></a>
+                                            <a class="icon-head icon-hover fs-1 z-2" href="https://www.linkedin.com/in/holger-schatte-developer" target="_blank"
+                                                rel="noopener noreferrer" class="linkedin"><i class="icons fa fa-linkedin"></i></a>
+                                            <a class="icon-head icon-hover fs-1 z-2" href="https://www.xing.com/profile/Holger_Schatte/cv" target="_blank"
+                                                rel="noopener noreferrer" class="xing"><i class="icons fa fa-xing"></i></a>
+                                            <a class="icon-head icon-hover fs-1 z-2" href="https://www.instagram.com/holgers2512/?hl=de" target="_blank"
+                                                rel="noopener noreferrer" class="instagram"><i class="icons bi bi-instagram"></i></a>
+                                        </div>
+                            <h2 style="margin:4rem 0 2.5rem 0;">Anfahrt</h2>
+                                <div class="d-flex flex-column">
+                                    <a style="margin: .5rem 0 0 0;" class="z-2 text-decoration-none color link-hover maps-link" href="https://goo.gl/maps/MmpAEJdNvaAfcYWXA" target="_blank">Cossebauder
+                                        Straße 23b</a>
+                                    <a style="margin: .5rem 0 0 0;" class="z-2 text-decoration-none color link-hover maps-link" href="https://goo.gl/maps/MmpAEJdNvaAfcYWXA" target="_blank">01157
+                                        Dresden</a>
+                                </div>
+                            <iframe class="maps z-2"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.6828322623182!2d13.682420015948415!3d51.058943951213244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709cf92aa32e179%3A0x5f0017162e5038e5!2sCossebauder%20Str.%2023B%2C%2001157%20Dresden!5e0!3m2!1sde!2sde!4v1675332509986!5m2!1sde!2sde"
+                                style="margin:3rem 0 0 0;border:3px solid var(--grey-white);border-radius:2rem;box-shadow:0 0 4px 3px var(--box-shadow);" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                    </div>
+            </div>  
+
+    <footer class="d-flex justify-content-center align-items-center flex-column p-3 z-1">
+        <div id="foo-icon">
+            <a style="margin:0 4px;padding:8px;" href="https://github.com/HolgerS2512" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-github z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.linkedin.com/in/holger-schatte-developer"
+                target="_blank" rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-linkedin z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.xing.com/profile/Holger_Schatte/cv" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none fa fa-xing z-2">
+            </a>
+            <a style="margin:0 4px;padding:8px;" href="https://www.instagram.com/holgers2512/?hl=de" target="_blank"
+                rel="noopener noreferrer" class="icons icon-hover text-decoration-none bi bi-instagram z-2">
+            </a>
+        </div>
+        <div id="copyright" class="foo-font" style="margin-bottom:10px;"></div>
+        <div class="z-2"><a class="foo-font link-hover text-decoration-none z-1" style="padding:10px 0;"
+                href="https://www.holger-schatte-developer.de/privacy-policy" rel="noopener noreferrer">Datenschutz</a> . <a
+                class="foo-font link-hover text-decoration-none z-1" style="padding:10px 0;"
+                href="https://www.holger-schatte-developer.de/imprint" rel="noopener noreferrer">Impressum</a></div>
+    </footer>
+</div>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript">
+    'use strict'
+    document.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem("lightMode") === "sun") {
+            $('#darkMode').addClass('bi-sun');
+            $('#settings').attr('data-stylesheet', '../css/light.css');
+            loadTheme();
+        } else if (localStorage.getItem("lightMode") === null) {
+            $('#darkMode').addClass('bi-moon-stars');
+            localStorage.setItem("lightMode", "dark");
+        } else {
+            $('#darkMode').addClass('bi-moon-stars');
+        };
+        document.getElementById('settings').addEventListener('click', changeLocalMode, false);
+        function changeLocalMode() {
+            let mode = localStorage.getItem("lightMode");
+            switch (mode) {
+                case "dark": changeSun();
+                    mode = "sun";
+                    localStorage.lightMode = "sun";
+                    break;
+                case "sun": changeDark();
+                    mode = "dark";
+                    localStorage.lightMode = "dark";
+                    break;
+            }
+        };
+        function loadTheme() {
+            let e = $('#settings').attr('data-stylesheet');
+            $('#style').attr('href', e);
+            return false;
+        };
+        function changeSun() {
+            $('#darkMode').removeClass('bi-moon-stars');
+            $('#darkMode').addClass('bi-sun');
+            $('#settings').attr('data-stylesheet', '../css/light.css');
+            loadTheme();
+        };
+        function changeDark() {
+            $('#darkMode').removeClass('bi-sun');
+            $('#darkMode').addClass('bi-moon-stars');
+            $('#settings').attr('data-stylesheet', '../css/dark.css');
+            loadTheme();
+        };
+
+        let lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            let st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                if (!$('header').hasClass('bullet')) {
+                    $('header').addClass('bullet');
+                    $('.li-out').addClass('bullet');
+                    setTimeout(() => {
+                        $('header').addClass('radius');
+                    }, 50);
+                };
+            } else {
+                $('header').removeClass('bullet');
+                $('.li-out').removeClass('bullet');
+                $('header').removeClass('radius');
+            }
+            lastScrollTop = st;
+            if ($(this).scrollTop() <= 0) {
+                $('header').removeClass('bullet');
+                $('.li-out').removeClass('bullet');
+                $('header').removeClass('radius');
+            };
+        });
+    }, false);
+</script>
+<script type="text/javascript">
+    'use strict'
+    window.addEventListener('load', () => {
+
+        $('.slider').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            arrows: false,
+            dots: false,
+            waitForAnimate: false,
+            pauseOnHover: false,
+            settings: "unslick"
+        });
+
+        document.getElementById('arrow').addEventListener('click', setMenu, false);
+        let l = document.querySelectorAll('.ul-child');
+        let changeMenu = 'visible';
+        function setMenu() {
+            switch (changeMenu) {
+                case 'visible': visibleMenu();
+                    changeMenu = 'hidden';
+                    break;
+                case 'hidden': hiddenMenu();
+                    changeMenu = 'visible';
+                    break;
+            };
+            function visibleMenu() {
+                if (window.screen.width <= 768 && window.screen.width != undefined) {
+                    $(() => {
+                        $({ blurValue: 0 }).animate({ blurValue: 5 }, {
+                            duration: 500,
+                            easing: 'swing',
+                            step: function () {
+                                $('.wrapper').css({
+                                    'filter': 'blur(' + this.blurValue + 'px)'
+                                });
+                            }
+                        });
+                    });
+                    if (!$('header').hasClass('menu')) {
+                        $('header').addClass('menu');
+                    };
+                    $('#settings').css('display', 'none');
+                    $('#arrow').children().addClass('bi-plus-lg');
+                    $('#nav-ul').css('visibility', 'visible');
+                    for (let i = 0; i < 4;) {
+                        setTimeout(function () {
+                            l[i].classList.add('sky');
+                        }, 150 * i++);
+                    };
+                } else {
+                    $('header').removeClass('bullet');
+                    $('.li-out').removeClass('bullet');
+                    $('header').removeClass('radius');
+                }
+            };
+            function hiddenMenu() {
+                if (window.screen.width <= 768 && window.screen.width != undefined) {
+                    for (let i = 0; i < 4;) {
+                        setTimeout(function () {
+                            l[i].classList.remove('sky');
+                        }, 150 * i++);
+                    };
+                    setTimeout(() => {
+                        $('#settings').css('display', 'flex');
+                        $('header').removeClass('menu');
+                        $('#arrow').children().removeClass('bi-plus-lg');
+                    }, 750);
+                    setTimeout(() => {
+                        $('#nav-ul').css('visibility', 'hidden');
+                    }, 775);
+                    $('#nav').css('overflow', 'hidden');
+                    $('#settings').css('opacity', 0);
+                    setTimeout(() => {
+                        $('#nav').css('overflow', 'visible');
+                        $('#settings').animate({
+                            opacity: ['1', 'swing']
+                        }, 350);
+                    }, 1250);
+                    $(() => {
+                        $({ blurValue: 5 }).animate({ blurValue: 0 }, {
+                            duration: 1350,
+                            easing: 'swing',
+                            step: function () {
+                                $('.wrapper').css({
+                                    'filter': 'blur(' + this.blurValue + 'px)'
+                                });
+                                setTimeout(() => {
+                                    if (this.blurValue != '0px' && changeMenu != 'hidden') {
+                                        $('.wrapper').css('filter', 'blur(0px)');
+                                    };
+                                }, 1350);
+                            }
+                        });
+                    });
+                }
+            }
+        };
+
+        $('#copyright').text('© ' + new Date().getFullYear() + ' Holger Schatte . Softwareentwickler');
+    }, false);
+</script>
+
+</body>
+
+</html>
